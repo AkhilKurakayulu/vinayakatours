@@ -1,39 +1,74 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sri Vinayaka Tours And Travels | Cab Services & Temple Tour Packages</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sri Vinayaka Tours And Travels | Cab Services &amp; Temple Tour Packages</title>
+	<!-- SEO and OG Tags -->
 	<meta name="description"
-		content="Sri Vinayaka Tours And Travels Tirupati offers affordable car rentals and customized South India temple tour packages. Book Dzire, Etios, Innova, Tempo Traveller &amp; more for Tirumala, Srikalahasti, Rameshwaram, and Kerala trips.">
-	<meta name="keywords"
-		content="Tirupati car rentals, Sri Vinayaka Tours And Travels Tirupati, temple tour packages, South India travel, Tirumala cab service, Kalahasti tour, Rameshwaram package, Kerala travel, Dzire rental Tirupati, Innova Crysta rental Tirupati, Tempo Traveller Tirupati, best tour operator in tirupati, best tours and travels in tirupati, cab in tirupati, cab service in tirupati, cabs for rent in tirupati, cabs in tirupati, car booking in tirupati, car rental in tirupati, car rentals in tirumala, drivers for hire in tirupati, hire a driver in tirupati, local tour packages in tirupati, taxi service near me, tirumala tirupati travels, tirumala travels, tirupati cab, tirupati cab package, tirupati cab rentals, tirupati cab travels, tirupati car booking, tirupati car hire, tirupati car rental, tirupati online travels, tirupati taxiwala, tours and travels in tirupati">
-
-
-	<meta property="og:title" content="Vinayaka Tours & Travels Tirupati - Cab services &amp; Temple Tour Packages">
+		content="Sri Vinayaka Tours And Travels Tirupati offers affordable car rentals and customized South India temple tour packages..." />
+	<meta name="keywords" content="Tirupati car rentals, temple tour packages, South India travel, etc." />
+	<meta property="og:title" content="Vinayaka Tours & Travels Tirupati - Cab services & Temple Tour Packages" />
 	<meta property="og:description"
-		content="Vinayaka Tours & Travels Travels Tirupati offers affordable car rentals and customized South India temple tour packages. Book Dzire, Etios, Innova, Tempo Traveller &amp; more for Tirumala, Srikalahasti, Rameshwaram, and Kerala trips.">
-	<meta property="og:image" content="https://elitetravelstirupati.com/images/banner.jpg">
-	<meta property="og:url" content="https://elitetravelstirupati.com/">
-	<meta property="og:type" content="website">
+		content="Vinayaka Tours & Travels Tirupati offers affordable car rentals and customized temple tour packages." />
+	<meta property="og:image" content="https://elitetravelstirupati.com/images/banner.jpg" />
+	<meta property="og:url" content="https://elitetravelstirupati.com/" />
+	<meta property="og:type" content="website" />
 
-	<link rel="icon" href="images/logo.png" type="image/x-icon">
-	<link rel="stylesheet" href="style.css">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer=""></script>
+	<link rel="icon" href="sri_vinayaka.png" type="image/x-icon" />
 
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer=""></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet" />
+
+	<!-- JavaScript (no defer, proper order) -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.tour-carousel').slick({
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				arrows: true,
+				dots: true,
+				infinite: true,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1
+						}
+					}
+				]
+			});
+
+			// Fix layout shift when resizing or opening Inspect
+			$(window).on('resize', function () {
+				$('.tour-carousel').slick('setPosition');
+			});
+		});
+	</script>
+
+
+	<!-- Optional: Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PQZCVM7ZKV"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-PQZCVM7ZKV');
+	</script>
+
+	<!-- Optional: Custom Styles -->
 	<style>
 		.banner-div {
 			background-image: url('sri_vinayaka.png');
@@ -42,6 +77,7 @@
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 1055px;
+			display: none;
 		}
 
 		@media (max-width: 768px) {
@@ -50,26 +86,8 @@
 			}
 		}
 	</style>
-
-	<!-- Google tag (gtag.js) -->
-	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PQZCVM7ZKV">
-	</script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-PQZCVM7ZKV');
-	</script>
-	<style id="__web-inspector-hide-shortcut-style__">
-		.__web-inspector-hide-shortcut__,
-		.__web-inspector-hide-shortcut__ *,
-		.__web-inspector-hidebefore-shortcut__::before,
-		.__web-inspector-hideafter-shortcut__::after {
-			visibility: hidden !important;
-		}
-	</style>
 </head>
+
 
 <body>
 	<!--
@@ -132,7 +150,7 @@ style="background-color: blue;"
 					<span class="line line3" style="background-color: #f8d844;"></span>
 				</div>
 				<ul class="menu-items">
-					<li><a href="#home">Home</a></li>
+					<!--<li><a href="#home">Home</a></li>-->
 					<li><a href="#about">About us</a></li>
 					<li><a href="#services">Services</a></li>
 					<li><a href="#packages">Packages</a></li>
@@ -156,7 +174,7 @@ style="background-color: blue;"
 	<div class="main-us" id="about">
 		<div class="main-container">
 			<div class="main-tle">
-				<h3><span style="color:#2CA4E0;">About</span> Sri Vinayaka Tours And Travels Tirupati</h3>
+				<h3><span style="color:#f8d844;">About</span> Sri Vinayaka Tours And Travels Tirupati</h3>
 				<br>
 				<p class="it-cls">Sri Vinayaka Tours and Travels Tirupati | Trusted &amp; Affordable Travel Services in
 					Tirupati</p>
@@ -175,7 +193,7 @@ style="background-color: blue;"
 	<div class="main-us" id="vehicles">
 		<div class="main-container">
 			<div class="main-tle">
-				<h3><span style="color:#2CA4E0;">Our cabs </span> Services in Tirupati</h3>
+				<h3><span style="color:#f8d844;">Our cabs </span> Services in Tirupati</h3>
 				<br>
 				<p class="it-cls"> At <strong>Sri Vinayaka Tours And Travels Tirupati</strong>, we offer a wide range of
 					clean, well-maintained, and fully AC cars with professional drivers for your temple tours and
@@ -228,7 +246,7 @@ style="background-color: blue;"
 				<div class="col-md-4">
 					<div class="car-list">
 						<div class="car-card">
-							<img src="crysta.png" class="car-img" alt="car5.webp">
+							<img src="ERTIGA_RED.webp" class="car-img" alt="car5.webp">
 							<div class="car-info">
 								<h3>Eartiga</h3>
 								<hr>
@@ -246,7 +264,7 @@ style="background-color: blue;"
 				<div class="col-md-4">
 					<div class="car-list">
 						<div class="car-card">
-							<img src="includes/cars/car4.webp" class="car-img" alt="car4.webp">
+							<img src="crysta.png" class="car-img" alt="car4.webp">
 							<div class="car-info">
 								<h3>Innova Crysta</h3>
 								<hr>
@@ -292,7 +310,7 @@ style="background-color: blue;"
 	<div class="main-us" id="packages">
 		<div class="main-container">
 			<div class="main-tle">
-				<h3><span style="color:#2CA4E0;">Our Packages </span> South India Pilgrimage and Temple Tour Packages
+				<h3><span style="color:#f8d844;">Our Packages </span> South India Pilgrimage and Temple Tour Packages
 					from Tirupati - Sri Vinayaka Tours And Travels </h3>
 				<br>
 				<p class="it-cls">Sri Vinayaka Tours And Travels Tirupati offers the most trusted and comfortable South
@@ -308,262 +326,65 @@ style="background-color: blue;"
 				<br>
 			</div>
 
-			<div class="row">
+			<div class="tour-carousel">
 
-				<div class="col-md-6">
-					<div class="car-list">
-						<div class="car-card packagre-card" style="width:100%;">
-							<img src="images/temp1.webp" class="car-img" style="width:100%;" alt="image1">
-							<div class="car-info">
-								<h3>Explore Tirupati Temple Tour Packages – Divine Journeys to Tirumala, Sri Kalahasthi
-									&amp; More</h3>
-								<p>Book the most sacred and scenic temple tour packages in and around Tirupati with
-									Vinayaka Tours & Travels Travels. Visit iconic pilgrimage destinations like Tirumala, Padmavathi
-									Temple, Kapila Teertham, Sri Kalahasthi, Iskcon Temple, and more. Comfortable rides,
-									experienced drivers, and custom packages available for families and groups.</p>
-								<hr>
-
-								<div class="col-sm-6">
-									<ul class="features-list">
-										<li>✔ Tirumala</li>
-										<li>✔ Tiruchanoor ( Padmavathi temple)</li>
-										<li>✔ Govindaraja Temple</li>
-
-										<li>✔ Iskcon Temple</li>
-										<li>✔ Kapila Teertham</li>
-									</ul>
-								</div>
-
-								<div class="col-sm-6">
-									<ul class="features-list">
-										<li>✔ Srinivasa Mangapuram Patnam</li>
-										<li>✔ Vakulamatha Temple</li>
-										<li>✔ Sri Kalahasthi</li>
-										<li>✔ Gudi Mallam</li>
-										<li>✔ Appalaigunta</li>
-
-									</ul>
-								</div>
-								<hr>
-
-
-								<a href="tel:919494457597"><button class="primary-btn">BOOK AN APPOINTMENT</button></a>
-							</div>
-						</div>
+				<!-- Card 1 -->
+				<div class="car-card">
+					<img src="tirumala2.jpg" class="car-img" alt="image1">
+					<div class="car-info">
+						<h3>Explore Tirupati Temple Tour Packages</h3>
+						<p>Book sacred temple tour packages around Tirupati with Vinayaka Tours & Travels...</p>
+						<ul class="features-list">
+							<li>✔ Tirumala</li>
+							<li>✔ Padmavathi Temple</li>
+							<li>✔ Govindaraja Temple</li>
+							<li>✔ Iskcon Temple</li>
+							<li>✔ Kapila Teertham</li>
+							<li>✔ Sri Kalahasthi</li>
+						</ul>
+						<hr>
+						<a href="tel:919494457597"><button class="primary-btn">BOOK AN APPOINTMENT</button></a>
 					</div>
-					<br>
-				</div>
-				<div class="col-md-6">
-					<div class="car-list">
-						<div class="car-card packagre-card" style="width:100%;">
-							<img src="images/package1.webp" class="car-img" style="width:100%;"
-								alt="Srinivasa_Mangapuram">
-							<div class="car-info">
-								<h3>South India Temple Tour Package – Kanipakam, Golden Temple, Tiruvannamalai,
-									Kanchipuram &amp; Tiruttani</h3>
-								<p>Plan a divine getaway with Sri Vinayaka Tours And Travels' South India Temple Tour
-									covering spiritual destinations like Kanipakam Vinayaka Temple, Sripuram Golden
-									Temple in Vellore, Arunachalam (Tiruvannamalai), Kanchipuram Temples, and Tiruttani
-									Murugan Temple. Enjoy safe travel, experienced drivers, and custom packages for
-									individuals, families, and groups.</p>
-
-
-								<hr>
-
-								<ul class="features-list">
-
-									<li>✔ Kanipakam</li>
-									<li>✔ Golden temple</li>
-									<li>✔ Arunachalam ( Tiruvannamalai)</li>
-									<li>✔ Kanchipuram</li>
-									<li>✔ Tiruttani</li>
-
-								</ul>
-								<hr>
-								<a href="tel:919494457597"><button class="primary-btn">BOOK AN APPOINTMENT</button></a>
-							</div>
-						</div>
-					</div>
-					<br>
 				</div>
 
-				<div class="col-md-6">
-					<div class="car-list">
-						<div class="car-card packagre-card" style="width:100%;">
-							<img src="images/package2.webp" class="car-img" style="width:100%;"
-								alt="Srinivasa_Mangapuram">
-							<div class="car-info">
-								<h3>Tamil Nadu Temple Tour – Mahabalipuram, Puducherry, Chidambaram, Thanjavur,
-									Kumbakonam &amp; Srirangam</h3>
-								<p>Explore the cultural and spiritual gems of Tamil Nadu with Vinayaka Tours & Travels. Our
-									exclusive temple and heritage tour includes the shore temples of Mahabalipuram, the
-									serene beaches of Puducherry, Chidambaram Nataraja Temple, Brihadeeswarar Temple in
-									Thanjavur, Kumbakonam Navagraha temples, and the grand Srirangam Ranganathaswamy
-									Temple. Ideal for family pilgrims and spiritual explorers.</p>
-
-
-								<hr>
-
-								<ul class="features-list">
-
-									<li>✔ Mahabali puram</li>
-									<li>✔ Puducherry</li>
-									<li>✔ Chidambaram</li>
-									<li>✔ Thanjavur</li>
-									<li>✔ Kumbakonam</li>
-									<li>✔ Sri Rangam</li>
-
-								</ul>
-								<hr>
-								<a href="tel:919494457597"><button class="primary-btn">BOOK AN APPOINTMENT</button></a>
-							</div>
-						</div>
+				<!-- Card 2 -->
+				<div class="car-card">
+					<img src="south2.jpg" class="car-img" alt="package1">
+					<div class="car-info">
+						<h3>South India Temple Tour Package</h3>
+						<p>Plan a divine getaway covering Kanipakam, Golden Temple, Arunachalam, and more...</p>
+						<ul class="features-list">
+							<li>✔ Kanipakam</li>
+							<li>✔ Golden temple</li>
+							<li>✔ Tiruvannamalai</li>
+							<li>✔ Kanchipuram</li>
+							<li>✔ Tiruttani</li>
+						</ul>
+						<hr>
+						<a href="tel:919494457597"><button class="primary-btn">BOOK AN APPOINTMENT</button></a>
 					</div>
-					<br>
 				</div>
 
-				<div class="col-md-6">
-					<div class="car-list">
-						<div class="car-card packagre-card" style="width:100%;">
-							<img src="images/package3.webp" class="car-img" style="width:100%"
-								alt="Srinivasa_Mangapuram">
-							<div class="car-info">
-								<h3>South Tamil Nadu Temple Tour – Madurai, Rameshwaram, Tiruchendur, Kanyakumari &amp;
-									Palani</h3>
-								<p>Embark on a divine journey across South Tamil Nadu with Vinayaka Tours & Travels Tirupati. This
-									temple tour covers the Meenakshi Amman Temple in Madurai, Ramanathaswamy Temple in
-									Rameshwaram, the sacred Subramanya Swamy Temple in Tiruchendur, the iconic
-									Vivekananda Rock in Kanyakumari, and the famous Palani Murugan Temple. A spiritual
-									and scenic experience for devotees and explorers alike.</p>
-
-
-								<hr>
-
-								<ul class="features-list">
-
-									<li>✔ Madhurai</li>
-									<li>✔ Rameshwaram</li>
-									<li>✔ Tiruchandur</li>
-									<li>✔ Kanyakumari</li>
-									<li>✔ Palani</li>
-
-								</ul>
-								<hr>
-								<a href="tel:919494457597"><button class="primary-btn">BOOK AN APPOINTMENT</button></a>
-							</div>
-						</div>
+				<!-- Card 3 -->
+				<div class="car-card">
+					<img src="images/package2.webp" class="car-img" alt="package2">
+					<div class="car-info">
+						<h3>Tamil Nadu Temple Tour</h3>
+						<p>Explore Mahabalipuram, Puducherry, Chidambaram, Thanjavur, Kumbakonam, and Srirangam...</p>
+						<ul class="features-list">
+							<li>✔ Mahabalipuram</li>
+							<li>✔ Puducherry</li>
+							<li>✔ Chidambaram</li>
+							<li>✔ Thanjavur</li>
+							<li>✔ Kumbakonam</li>
+							<li>✔ Srirangam</li>
+						</ul>
+						<hr>
+						<a href="tel:919494457597"><button class="primary-btn">BOOK AN APPOINTMENT</button></a>
 					</div>
-					<br>
 				</div>
 
-				<div class="col-md-6">
-					<div class="car-list">
-						<div class="car-card packagre-card" style="width:100%;">
-							<img src="images/package4.webp" class="car-img" style="width:100%"
-								alt="Srinivasa_Mangapuram">
-							<div class="car-info">
-								<h3>Kerala &amp; Karnataka Temple Tour – Thiruvananthapuram, Sabarimala, Guruvayoor,
-									Gokarna, Udupi &amp; Murudeshwar</h3>
-
-								<p>Experience divine bliss with Sri Vinayaka Tours And Travels Tirupati on our Kerala
-									and Karnataka Temple Tour. Visit the sacred Padmanabhaswamy Temple in
-									Thiruvananthapuram, seek blessings at the hill shrine of Lord Ayyappa in Sabarimala,
-									offer prayers at the famous Guruvayoor Krishna Temple, explore the spiritual beach
-									town of Gokarna, visit the Krishna Matha in Udupi, and witness the towering Shiva
-									statue at Murudeshwar. A perfect pilgrimage journey for temple lovers and spiritual
-									seekers.</p>
-
-								<hr>
-
-								<ul class="features-list">
-
-									<li>✔ Thiruvananthapuram</li>
-									<li>✔ Sabarimala</li>
-									<li>✔ Guruvayoor</li>
-									<li>✔ Gokarna</li>
-									<li>✔ Udupi</li>
-									<li>✔ Murudeshwar</li>
-
-								</ul>
-								<hr>
-								<a href="tel:919494457597"><button class="primary-btn">BOOK AN APPOINTMENT</button></a>
-							</div>
-						</div>
-					</div>
-					<br>
-				</div>
-
-				<div class="col-md-6">
-					<div class="car-list">
-						<div class="car-card packagre-card" style="width:100%;">
-							<img src="images/package5.webp" class="car-img" style="width:100%"
-								alt="Srinivasa_Mangapuram">
-							<div class="car-info">
-								<h3>Hill Station &amp; Temple Tour – Kolhapur, Mysuru, Ooty, Coimbatore, Kodaikanal
-									&amp; Munnar</h3>
-
-								<p>Explore the perfect blend of culture, heritage, and natural beauty with Sri Vinayaka
-									Tours And Travels Tirupati. Visit the famous Mahalaxmi Temple in Kolhapur, admire
-									the royal charm of Mysuru Palace, enjoy the misty landscapes of Ooty and Kodaikanal,
-									experience the energy of Coimbatore city, and soak in the lush tea gardens of
-									Munnar. This hill station and temple tour is ideal for families, couples, and those
-									seeking a refreshing break.</p>
-
-								<hr>
-
-								<ul class="features-list">
-
-									<li>✔ Kolhapur</li>
-									<li>✔ Mysuru</li>
-									<li>✔ Ooty</li>
-									<li>✔ Coimbatore</li>
-									<li>✔ Kodaikanal</li>
-									<li>✔ Munnar</li>
-
-								</ul>
-								<hr>
-								<a href="tel:919494457597"><button class="primary-btn">BOOK AN APPOINTMENT</button></a>
-							</div>
-						</div>
-					</div>
-					<br>
-				</div>
-				<div class="col-md-6">
-					<div class="car-list">
-						<div class="car-card packagre-card" style="width:100%;">
-							<img src="images/package6.webp" class="car-img" style="width:100%"
-								alt="Srinivasa_Mangapuram">
-							<div class="car-info">
-								<h3>Explore South India: Tour Packages Covering Andhra Pradesh, Telangana, Tamil Nadu,
-									Karnataka &amp; Kerala</h3>
-								<p>Discover the cultural richness and natural wonders of South India with Vinayaka Tours & Travels
-									Tirupati. Our specially curated state-wise tour packages cover Andhra Pradesh's
-									divine temples, Telangana’s heritage sites, Tamil Nadu’s ancient architecture,
-									Karnataka’s royal palaces, and Kerala’s serene backwaters. Whether you're seeking
-									spiritual peace, scenic beauty, or family adventures, our customized travel plans
-									ensure an unforgettable journey across South India.</p>
-
-
-								<hr>
-
-								<ul class="features-list">
-
-									<li>✔ Andhra Pradesh</li>
-									<li>✔ Telangana</li>
-									<li>✔ Tamil Nadu</li>
-									<li>✔ Karnataka</li>
-									<li>✔ Kerala</li>
-
-
-								</ul>
-								<hr>
-								<a href="tel:919494457597"><button class="primary-btn">BOOK AN APPOINTMENT</button></a>
-							</div>
-						</div>
-					</div>
-					<br>
-				</div>
-
+				<!-- Add more cards here as needed -->
 			</div>
 
 
@@ -578,7 +399,7 @@ style="background-color: blue;"
 				<div class="col-md-3 col-6">
 					<div class="abt-highlighter">
 						<div class="img-block">
-							<img src="images/icon1.png" alt="discory_place">
+							<img src="card1.png" alt="discory_place">
 						</div>
 						<div class="high-txt-block">
 							<h3>Discovers the places</h3>
@@ -591,7 +412,7 @@ style="background-color: blue;"
 					<div class="abt-highlighter">
 						<div class="img-block">
 
-							<img src="images/icon2.png" alt="enjoy deals">
+							<img src="card2.png" alt="enjoy deals">
 						</div>
 						<div class="high-txt-block">
 							<h3>Enjoy deals &amp; delights</h3>
@@ -603,7 +424,7 @@ style="background-color: blue;"
 				<div class="col-md-3 col-6">
 					<div class="abt-highlighter">
 						<div class="img-block">
-							<img src="images/icon4.png" alt="explore">
+							<img src="card3.png" alt="explore">
 						</div>
 						<div class="high-txt-block">
 							<h3>Exploring made easy</h3>
@@ -615,7 +436,7 @@ style="background-color: blue;"
 				<div class="col-md-3 col-6">
 					<div class="abt-highlighter">
 						<div class="img-block">
-							<img src="images/icon5.png" alt="travle">
+							<img src="card4.png" alt="travle">
 						</div>
 						<div class="high-txt-block">
 							<h3>Travel you can trust </h3>
@@ -630,9 +451,10 @@ style="background-color: blue;"
 	<div class="main-us" id="services" style="background-color:#1B304D; color:#fff;">
 		<div class="main-container">
 			<div class="main-tle">
-				<h3><span style="color:#2CA4E0;">Our Travel </span> Services in Tirupati</h3>
+				<h3><span style="color:#f8d844;">Our Travel </span> Services in Tirupati</h3>
 				<br>
-				<p class="it-cls" style="color:#fff">Vinayaka Tours & Travels Tirupati provides a range of reliable and affordable
+				<p class="it-cls" style="color:#fff">Vinayaka Tours & Travels Tirupati provides a range of reliable and
+					affordable
 					travel services for local and outstation trips,<br> ensuring comfort and safety for every journey.
 				</p>
 
@@ -676,12 +498,13 @@ style="background-color: blue;"
 		</div>
 	</div>
 
-	<div class="main-us" id="testimonals" style="background-color:#1B304D; color:#fff;">
+	<!-- <div class="main-us" id="testimonals" style="background-color:#1B304D; color:#fff;">
 		<div class="main-container">
 			<div class="main-tle">
-				<h3><span style="color:#2CA4E0;">What Our </span>Clients Say</h3>
+				<h3><span style="color:#f8d844;">What Our </span>Clients Say</h3>
 				<br>
-				<p class="it-cls" style="color:#fff">Real reviews from happy customers who used Vinayaka Tours & Travels Tirupati
+				<p class="it-cls" style="color:#fff">Real reviews from happy customers who used Vinayaka Tours & Travels
+					Tirupati
 					services.</p>
 
 				<br>
@@ -693,12 +516,13 @@ style="background-color: blue;"
 
 
 					<div class="testimonials-grid">
-						<!-- Testimonial Card 1 -->
+						<!-- Testimonial Card 1 
 						<div class="testimonial-card">
 							<div class="quote-icon">❝</div>
 							<h4>Best In Service</h4>
 							<div class="stars">★★★★★</div>
-							<p>I came to tirupati for temple visits and approach the EVinayaka Tours & Travels and they send me the
+							<p>I came to tirupati for temple visits and approach the EVinayaka Tours & Travels and they
+								send me the
 								clean and neat vehicle and our driver Suresh is well behaved and down to earth person
 								with the help of Suresh we completed all the </p>
 							<div class="testimonial-user">
@@ -708,7 +532,7 @@ style="background-color: blue;"
 								</div>
 							</div>
 						</div>
-						<!-- Testimonial Card 1 -->
+						<!-- Testimonial Card 1 
 						<div class="testimonial-card">
 							<div class="quote-icon">❝</div>
 							<h4>Best Cab service in Tirupati</h4>
@@ -721,7 +545,7 @@ style="background-color: blue;"
 								</div>
 							</div>
 						</div>
-						<!-- Testimonial Card 1 -->
+						<!-- Testimonial Card 1 
 						<div class="testimonial-card">
 							<div class="quote-icon">❝</div>
 							<h4>Best Taxi service in Tirupati</h4>
@@ -736,7 +560,7 @@ style="background-color: blue;"
 							</div>
 						</div>
 
-						<!-- Testimonial Card 2 -->
+						<!-- Testimonial Card 2 
 
 
 
@@ -745,12 +569,12 @@ style="background-color: blue;"
 				</div>
 			</section>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="main-us" id="contact">
 		<div class="main-container">
 			<div class="main-tle">
-				<h3><span style="color:#2CA4E0;">Contact </span> Sri Vinayaka Tours And Travels Tirupati</h3>
+				<h3><span style="color:#f8d844;">Contact </span> Sri Vinayaka Tours And Travels Tirupati</h3>
 				<br>
 				<p class="it-cls">Plan your perfect pilgrimage or holiday tour with <strong>Sri Vinayala Tours And
 						Travels Tirupati</strong>, your trusted travel partner in Andhra Pradesh and South India. We
@@ -781,11 +605,11 @@ style="background-color: blue;"
 							<a href="mailto:elitetravelstirupati@gmail.com" class="ahref">
 								<p><span class="contact-span"><i
 											class="fa-solid fa-envelope-circle-check"></i></span><br><br><br>
-									elitetravelstirupati@gmail.com </p>
+									vinayakatours@gmail.com </p>
 							</a><br><br>
 
-							<a href="tel:919494457597"><button class="primary-btn"><i
-										class="fa-solid fa-phone"></i>&nbsp; &nbsp; BOOK AN APPOINTMENT</button></a>
+							<a href="tel:9999999999"><button class="primary-btn"><i class="fa-solid fa-phone"></i>&nbsp;
+									&nbsp; BOOK AN APPOINTMENT</button></a>
 						</div>
 					</div>
 				</div>
@@ -794,11 +618,13 @@ style="background-color: blue;"
 						<div class="icons-blocks">
 
 							<h4><span class="contact-span"><i class="fa-solid fa-business-time"></i></span>
-								<br><br><br>Monday - Sunday : 24hours Available </h4><br><br>
+								<br><br><br>Monday - Sunday : 24hours Available
+							</h4><br><br>
 							<h4><span class="contact-span"><i
-										class="fa-solid fa-map-location-dot"></i></span><br><br><br> 2-401/37, 2nd Line,
-								<br>Near Rajarajeshwari temple, Bagath Colony, Renigunta, <br> Tirupati Dist, AP,
-								517520. </h4><br><br>
+										class="fa-solid fa-map-location-dot"></i></span><br><br><br> NA-NA, NAnd Line,
+								<br>test,test <br> Tirupati Dist, AP,
+								517501.
+							</h4><br><br>
 						</div>
 					</div>
 				</div>
@@ -811,58 +637,166 @@ style="background-color: blue;"
 		</div>
 	</div>
 
-	<div class="main-us" style="background-color:#1B304D; color:#fff;">
+	<footer>
+		<style>
+			footer {
+				font-family: 'Poppins', sans-serif;
+				background-color: #000000;
+				color: #ffffff;
+				padding: 60px 20px;
+			}
+
+			footer h3 {
+				font-size: 2rem;
+				font-weight: 700;
+				text-align: center;
+				color: #2CA4E0;
+				margin-bottom: 10px;
+			}
+
+			footer h3 span {
+				color: #f8d844;
+			}
+
+			footer p {
+				font-size: 1.5rem;
+				text-align: center;
+				max-width: 800px;
+				margin: 0 auto;
+				color: #bbbbbb;
+				line-height: 1.6;
+			}
+
+			footer .footer-contacts {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 30px;
+				margin: 40px auto;
+				max-width: 1100px;
+			}
+
+			footer .contact-block {
+				flex: 1 1 200px;
+				max-width: 250px;
+				text-align: center;
+			}
+
+			footer .contact-block i {
+				font-size: 2rem;
+				margin-bottom: 15px;
+				color: #2CA4E0;
+			}
+
+			footer .contact-block h4 {
+				font-size: 1.4rem;
+				color: #eeeeee;
+				line-height: 1.6;
+				margin: 0;
+			}
+
+			footer .contact-block a {
+				color: inherit;
+				text-decoration: none;
+			}
+
+			footer .primary-btn {
+				padding: 12px 28px;
+				background-color: #2CA4E0;
+				border: none;
+				border-radius: 30px;
+				font-weight: 600;
+				color: #fff;
+				cursor: pointer;
+				font-size: 1.5rem;
+				transition: all 0.3s ease;
+				display: inline-flex;
+				align-items: center;
+				gap: 8px;
+				margin-top: 20px;
+			}
+
+			footer .primary-btn:hover {
+				background-color: #1a8ec9;
+				box-shadow: 0 4px 14px rgba(44, 164, 224, 0.4);
+			}
+
+			footer .footer-bottom {
+				text-align: center;
+				font-size: 1.5rem;
+				margin-top: 50px;
+				color: #888888;
+			}
+
+			footer hr {
+				border-top: 1px solid #444;
+				margin: 30px auto;
+				max-width: 600px;
+			}
+
+			@media (max-width: 768px) {
+				footer .footer-contacts {
+					flex-direction: column;
+					align-items: center;
+				}
+
+				footer h3 {
+					font-size: 1.6rem;
+				}
+
+				footer p {
+					font-size: 0.95rem;
+				}
+			}
+		</style>
+
 		<div class="main-container">
 			<div class="main-tle">
-				<h3><span style="color:#2CA4E0;">Best Taxi </span> Services in Tirupati</h3>
-				<br>
-				<p class="it-cls" style="color:#fff;">Sri Vinayaka Tours And Travels Tirupati provides a range of
-					reliable and affordable travel services for local and outstation trips,<br> ensuring comfort and
-					safety for every journey.</p>
-				<br><br>
-				<div class="row mob-block">
-					<div class="col-md-3">
-						<a href="tel:919494457597" class="ahref">
-							<h4><span class="contact-span"><i class="fa-solid fa-phone"></i></span><br><br><br> +91
-								9494457597 </h4>
-						</a>
-					</div>
-					<div class="col-md-3">
-						<a href="mailto:elitetravelstirupati@gmail.com" class="ahref">
-							<h4><span class="contact-span"><i
-										class="fa-solid fa-envelope-circle-check"></i></span><br><br><br>
-								elitetravelstirupati@gmail.com </h4>
-						</a>
-					</div>
-					<div class="col-md-3">
-						<h4><span class="contact-span"><i class="fa-solid fa-business-time"></i></span>
-							<br><br><br>Monday - Sunday : 24hours Available </h4>
-					</div>
-					<div class="col-md-3">
-						<h4><span class="contact-span"><i class="fa-solid fa-map-location-dot"></i></span><br><br><br>
-							2-401/37, 2nd Line, <br>Near Rajarajeshwari temple, Bagath Colony, Renigunta, <br> Tirupati
-							Dist, AP, 517520. </h4>
-					</div>
-				</div>
-
-				<h4>Or</h4>
-				<br><br>
-				<a href="tel:919494457597"><button class="primary-btn"><i class="fa-solid fa-phone"></i>&nbsp; &nbsp;
-						BOOK AN APPOINTMENT</button></a>
-				<br><br>
-				<hr>
-				<p>
-					Designed &amp; Developed by Govexi <br> ©2025 All right are reserverd by Sri Vinayaka Tours And
-					Travels Tirupati.
-				</p>
+				<h3><span>Best Taxi </span> Services in Tirupati</h3>
+				<p>Sri Vinayaka Tours And Travels Tirupati provides a range of reliable and affordable travel services
+					for local and outstation trips, ensuring comfort and safety for every journey.</p>
 			</div>
 
+			<div class="footer-contacts">
+				<div class="contact-block">
+					<i class="fa-solid fa-phone"></i>
+					<h4><a href="tel:9999999999">+91 99999 99999</a></h4>
+				</div>
+				<div class="contact-block">
+					<i class="fa-solid fa-envelope-circle-check"></i>
+					<h4><a href="mailto:vinayakatours@gmail.com">vinayakatours@gmail.com</a></h4>
+				</div>
+				<div class="contact-block">
+					<i class="fa-solid fa-business-time"></i>
+					<h4>Monday - Sunday<br>24 Hours Available</h4>
+				</div>
+				<div class="contact-block">
+					<i class="fa-solid fa-map-location-dot"></i>
+					<h4>NA-NA, NAnd Line,<br>Test, Test,<br>Tirupati Dist, AP, 517501</h4>
+				</div>
+			</div>
+
+			<div style="text-align: center;">
+				<a href="tel:919999999999">
+					<button class="primary-btn"><i class="fa-solid fa-phone"></i> BOOK AN APPOINTMENT</button>
+				</a>
+			</div>
+
+			<div class="footer-bottom">
+				<hr>
+				Designed &amp; Developed by Govexi<br>©2025 All rights reserved by Sri Vinayaka Tours And Travels
+				Tirupati.
+			</div>
 		</div>
-	</div>
-	<a href="https://wa.me/+919494457597" aria-label="Call Vinayaka Tours & Travels Tirupati" rel="noreferrer" target="_blank"
-		class="whatsapp-icon-section"><i class="fa-brands fa-whatsapp"></i></a>
-	<a href="tel:919494457597" aria-label="Call Sri Vinayaka Tours And Travels Tirupati" rel="noreferrer"
-		target="_blank" class="phone-icon-section"><i class="fa-solid fa-phone-volume"></i></a>
+
+		<a href="https://wa.me/+919999999999" class="whatsapp-icon-section" target="_blank"
+			aria-label="WhatsApp Vinayaka Tours">
+			<i class="fa-brands fa-whatsapp"></i>
+		</a>
+		<a href="tel:919999999999" class="phone-icon-section" target="_blank" aria-label="Call Vinayaka Tours">
+			<i class="fa-solid fa-phone-volume"></i>
+		</a>
+	</footer>
 	<script>
 		function toggleMenu() {
 			const menu = document.getElementById('navbarMenu');
@@ -878,4 +812,5 @@ style="background-color: blue;"
 		}
 	</script>
 </body>
+
 </html>
