@@ -183,7 +183,7 @@ nav {
 
 .main-tle {
   text-align: center;
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 
 .main-container {
@@ -208,7 +208,7 @@ nav {
   font-weight: 500;
 }
 
-.abt-highlighter {
+/* .abt-highlighter {
   background-color: #2CA4E0;
   color: white;
   padding: 12px 24px;
@@ -219,14 +219,11 @@ nav {
   position: relative;
   overflow: hidden;
   z-index: 1;
-
-  /* ✨ Box shadow here */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.3s ease;
 }
 
 .abt-highlighter:hover {
-  /* Optional: stronger shadow on hover */
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.8);
   background-color: #1B304D;
 }
@@ -241,7 +238,7 @@ nav {
 
 .abt-highlighter .img-block img {
   width: 90px;
-}
+} */
 
 .high-txt-block h3 {
   font-family: "Poppins", sans-serif;
@@ -577,7 +574,7 @@ nav {
 .menu-items {
   order: 2;
   display: flex;
-  margin-right: -87px;
+  /*margin-right: -87px;*/
   gap: 20px;
 }
 
@@ -843,6 +840,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
   }
+
   .main-navbar a {
     color: white;
   }
@@ -906,4 +904,84 @@ a:hover {
 
 .hamburger-lines .line {
   background-color: #1B304D;
+}
+
+.tour-carousel .car-card {
+  max-height: 650px;
+}
+
+#about>div>.main-tle {
+  padding-top: 70px;
+}
+
+.slick-dots li button:before {
+  font-size: 20px !important;
+}
+
+in-us {
+  padding: 50px 0;
+  background: linear-gradient(to right, #f1f9ff, #ffffff);
+}
+
+.abt-highlighter {
+  background: #FDF7F0;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  border-top: 5px solid #1B304D;
+  max-width: 500px;
+}
+
+.abt-highlighter:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #f8d844;
+}
+
+.img-block img {
+  /*width: 65px;*/
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.high-txt-block h3 {
+  font-size: 1.2rem;
+  color: #0a2540;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.high-txt-block p {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.main-container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .high-txt-block h3 {
+    font-size: 1rem;
+  }
+
+  .high-txt-block p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-3 {
+    width: 22% !important;
+  }
+}
+
+body>footer>div>div.main-tle>h3 {
+  color: white;
 }
