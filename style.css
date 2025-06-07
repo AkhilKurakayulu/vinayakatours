@@ -146,7 +146,7 @@ nav {
 }
 
 .primary-btn {
-  background-color: #2CA4E0;
+  background-color: #f8d844;
   border: none;
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -985,3 +985,26 @@ in-us {
 body>footer>div>div.main-tle>h3 {
   color: white;
 }
+
+.fa-phone:before {
+    color: #f8d844;
+}
+
+.fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before {
+    content: var(--fa);
+    color: #f8d844;
+}
+
+.fa-phone-volume:before {
+  color: white !important; 
+}
+
+.main-navbar a:hover {
+  color: f8d844;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Adjust to your header's height */
+}
+
