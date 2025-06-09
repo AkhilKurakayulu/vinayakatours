@@ -907,7 +907,7 @@ a:hover {
 }
 
 .tour-carousel .car-card {
-  max-height: 650px;
+  height: 700px;
 }
 
 #about>div>.main-tle {
@@ -987,16 +987,21 @@ body>footer>div>div.main-tle>h3 {
 }
 
 .fa-phone:before {
-    color: #f8d844;
+  color: #f8d844;
 }
 
-.fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before {
-    content: var(--fa);
-    color: #f8d844;
+.fa-regular:before,
+.fa-solid:before,
+.fa:before,
+.fab:before,
+.far:before,
+.fas:before {
+  content: var(--fa);
+  color: #f8d844;
 }
 
 .fa-phone-volume:before {
-  color: white !important; 
+  color: white !important;
 }
 
 .main-navbar a:hover {
@@ -1005,6 +1010,37 @@ body>footer>div>div.main-tle>h3 {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Adjust to your header's height */
+  scroll-padding-top: 100px;
+  /* Adjust to your header's height */
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th,
+td {
+  border: 1px solid #aaa;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#packages th {
+    text-align: center;
+}
+
+.vehicle-details{
+  padding: 50px 120px;
+}
