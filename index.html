@@ -8,7 +8,8 @@
 	<!-- SEO and OG Tags -->
 	<meta name="description"
 		content="Sri Vinayaka Tours And Travels Tirupati offers affordable car rentals and customized South India temple tour packages..." />
-	<meta name="keywords" content="Tirupati car rentals, temple tour packages, South India travel, sri vinayaka, svtt tirupati, etc." />
+	<meta name="keywords"
+		content="Tirupati car rentals, temple tour packages, South India travel, sri vinayaka, svtt tirupati, etc." />
 	<meta name="robots" content="index, follow" />
 	<meta property="og:title" content="Vinayaka Tours & Travels Tirupati - Cab services & Temple Tour Packages" />
 	<meta property="og:description"
@@ -27,7 +28,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-	<!-- Font -->
+	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet" />
 
@@ -38,7 +39,7 @@
 		$(document).ready(function () {
 			$('.tour-carousel').slick({
 				slidesToShow: 2,
-				slidesToScroll: 1,
+				slidesToScroll: 2,
 				arrows: true,
 				dots: true,
 				infinite: true,
@@ -46,7 +47,8 @@
 					{
 						breakpoint: 768,
 						settings: {
-							slidesToShow: 1
+							slidesToShow: 1,
+							dots: true
 						}
 					}
 				]
@@ -55,6 +57,7 @@
 			// Fix layout shift when resizing or opening Inspect
 			$(window).on('resize', function () {
 				$('.tour-carousel').slick('setPosition');
+				$('.tour-carousel').slick('slickGoTo', 0);
 			});
 		});
 	</script>
