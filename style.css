@@ -1070,7 +1070,7 @@ caption {
 }
 
 .slick-dots {
-  bottom: -60px !important;
+  bottom: -40px !important;
 }
 
 @media (max-width: 768px) {
@@ -1101,4 +1101,28 @@ caption {
 
 .vehicle-details th {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .tour-carousel .car-card {
+    height: 900px !important;
+  }
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px !important;
+  line-height: 35px;
+  color: #f8d844 !important;
+  opacity: 1 !important;
+  font-family: "Arial", sans-serif;
+}
+
+.slick-prev {
+  left: -45px !important;
 }
