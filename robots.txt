@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://srivinayakatours.netlify.app/sitemap.xml
+Sitemap: https://www.svtttirupati.com/sitemap.xml
