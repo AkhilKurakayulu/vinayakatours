@@ -1126,3 +1126,7 @@ caption {
 .slick-prev {
   left: -45px !important;
 }
+
+#vehicles > div > div.row > div:nth-child(3) > div > div > img{
+	height: 206.66px
+}
