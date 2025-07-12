@@ -17,10 +17,10 @@
 	<meta property="og:image" content="https://www.svtttirupati.com/sri_vinayaka.png" />
 	<meta property="og:url" content="https://www.svtttirupati.com" />
 	<meta property="og:type" content="website" />
-	
+
 	<link rel="canonical" href="https://www.svtttirupati.com/" />
 	<link rel="icon" href="sri_vinayaka.png" type="image/x-icon" />
-	
+
 	<!-- CSS -->
 	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
@@ -49,8 +49,8 @@
 						breakpoint: 768,
 						settings: {
 							slidesToShow: 1,
-							dots: true, 
-							slidesToScroll:1
+							dots: true,
+							slidesToScroll: 1
 						}
 					}
 				]
@@ -158,11 +158,11 @@ style="background-color: blue;"
 				<ul class="menu-items">
 					<!--<li><a href="#home">Home</a></li>-->
 					<li><a href="#about">About us</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#packages">Packages</a></li>
 					<li><a href="#vehicles">List of vehicles</a></li>
-					<!--<li><a href="#testimonals">Testimonial</a></li>-->
+					<li><a href="#packages">Packages</a></li>
+					<li><a href="#services">Services</a></li>
 					<li><a href="#contact">Contact us</a></li>
+					<li><a href="#testimonals">Testimonial</a></li>
 				</ul>
 				<img class="logo" src="sri_vinayaka.png" alt="logo">
 			</div>
@@ -287,83 +287,88 @@ style="background-color: blue;"
 
 	<div class="vehicle-details">
 		<h3>Rate Chart</h3>
-		<h4>Note: For Parking, Toll charges and permits need to pay by customer</h4>
+		<h4>Note: For Parking, Toll charges and permits need to be paid by customer</h4>
 		<table>
 			<caption>Vehicle Details</caption>
-			<tr>
-				<th>Vehicle Capacity</th>
-				<th>Limit</th>
-				<th>Price</th>
-				<th>Driver Charges</th>
-			</tr>
-			<tr>
-				<td>4+1</td>
-				<td>300KM/Day</td>
-				<td>Rs.15/KM</td>
-				<td>Rs.300</td>
-			</tr>
-			<tr>
-				<td>4+1 (Local)</td>
-				<td> 1 Day</td>
-				<td>Rs.2000</td>
-				<td> - </td>
-			</tr>
-			<tr>
-				<td>6+1</td>
-				<td>300KM/Day</td>
-				<td>Rs.19/KM</td>
-				<td>Rs.300</td>
-			</tr>
-			<tr>
-				<td>6+1 (Local)</td>
-				<td> 1 Day</td>
-				<td>Rs.2300</td>
-				<td> - </td>
-			</tr>
-			<tr>
-				<td>7+1 (Innova)</td>
-				<td>300KM/Day</td>
-				<td>Rs.21/KM</td>
-				<td>Rs.300</td>
-			</tr>
-			<tr>
-				<td>6+1 (Innova)</td>
-				<td> 1 Day</td>
-				<td>Rs.2500</td>
-				<td> - </td>
-			</tr>
-			<tr>
-				<td>7+1 (Crysta)</td>
-				<td>300KM/Day</td>
-				<td>Rs.23/KM</td>
-				<td>Rs.300</td>
-			</tr>
-			<tr>
-				<td>6+1 (Crysta)</td>
-				<td> 1 Day</td>
-				<td>Rs.3000</td>
-				<td> - </td>
-			</tr>
-			<tr>
-				<td>8+1 (Tavera Cheverolet)</td>
-				<td>300KM/Day</td>
-				<td>Rs.20/KM | Rs.3000/day</td>
-				<td>Rs.300</td>
-			</tr>
-			<tr>
-				<td>12+1 (Tempo Traveller)</td>
-				<td>300KM/Day</td>
-				<td>Rs.27/KM | Rs.3000/day</td>
-				<td>Rs.500</td>
-			</tr>
-			<tr>
-				<td>17+1 (Tempo Traveller)</td>
-				<td>300KM/Day</td>
-				<td>Rs.35/KM | Rs.5000/day</td>
-				<td>Rs.500</td>
-			</tr>
+			<thead>
+				<tr>
+					<th>Vehicle Capacity</th>
+					<th>Limit</th>
+					<th>Price</th>
+					<th>Driver Charges</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-label="Vehicle Capacity">4+1</td>
+					<td data-label="Limit">300KM/Day</td>
+					<td data-label="Price">Rs.15/KM</td>
+					<td data-label="Driver Charges">Rs.300</td>
+				</tr>
+				<tr>
+					<td data-label="Vehicle Capacity">4+1 (Local)</td>
+					<td data-label="Limit">1 Day</td>
+					<td data-label="Price">Rs.2000</td>
+					<td data-label="Driver Charges">-</td>
+				</tr>
+				<tr>
+					<td data-label="Vehicle Capacity">6+1</td>
+					<td data-label="Limit">300KM/Day</td>
+					<td data-label="Price">Rs.19/KM</td>
+					<td data-label="Driver Charges">Rs.300</td>
+				</tr>
+				<tr>
+					<td data-label="Vehicle Capacity">6+1 (Local)</td>
+					<td data-label="Limit">1 Day</td>
+					<td data-label="Price">Rs.2300</td>
+					<td data-label="Driver Charges">-</td>
+				</tr>
+				<tr>
+					<td data-label="Vehicle Capacity">7+1 (Innova)</td>
+					<td data-label="Limit">300KM/Day</td>
+					<td data-label="Price">Rs.21/KM</td>
+					<td data-label="Driver Charges">Rs.300</td>
+				</tr>
+				<tr>
+					<td data-label="Vehicle Capacity">6+1 (Innova)</td>
+					<td data-label="Limit">1 Day</td>
+					<td data-label="Price">Rs.2500</td>
+					<td data-label="Driver Charges">-</td>
+				</tr>
+				<tr>
+					<td data-label="Vehicle Capacity">7+1 (Crysta)</td>
+					<td data-label="Limit">300KM/Day</td>
+					<td data-label="Price">Rs.23/KM</td>
+					<td data-label="Driver Charges">Rs.300</td>
+				</tr>
+				<tr>
+					<td data-label="Vehicle Capacity">6+1 (Crysta)</td>
+					<td data-label="Limit">1 Day</td>
+					<td data-label="Price">Rs.3000</td>
+					<td data-label="Driver Charges">-</td>
+				</tr>
+				<tr>
+					<td data-label="Vehicle Capacity">8+1 (Tavera Chevrolet)</td>
+					<td data-label="Limit">300KM/Day</td>
+					<td data-label="Price">Rs.20/KM | Rs.3000/day</td>
+					<td data-label="Driver Charges">Rs.300</td>
+				</tr>
+				<tr>
+					<td data-label="Vehicle Capacity">12+1 (Tempo Traveller)</td>
+					<td data-label="Limit">300KM/Day</td>
+					<td data-label="Price">Rs.27/KM | Rs.3000/day</td>
+					<td data-label="Driver Charges">Rs.500</td>
+				</tr>
+				<tr>
+					<td data-label="Vehicle Capacity">17+1 (Tempo Traveller)</td>
+					<td data-label="Limit">300KM/Day</td>
+					<td data-label="Price">Rs.35/KM | Rs.5000/day</td>
+					<td data-label="Driver Charges">Rs.500</td>
+				</tr>
+			</tbody>
 		</table>
 	</div>
+
 
 
 
@@ -836,10 +841,6 @@ style="background-color: blue;"
 					</div>
 				</div>
 			</div>
-
-
-
-
 		</div>
 	</div>
 
@@ -1087,6 +1088,57 @@ style="background-color: blue;"
 
 		</div>
 	</div>
+
+	<section class="review-section" id="testimonals">
+		<h2>What Our Travelers Say</h2>
+		<div class="review-grid">
+
+			<!-- Review 1 -->
+			<div class="review-card">
+				<p>"The Tirumala Balaji Darshan package was seamless. We even had time to visit ISKCON and
+					Kapilatheertham!"</p>
+				<div class="review-name">Sai Kiran Reddy</div>
+				<div class="review-location">Vijayawada, Andhra Pradesh</div>
+				<div class="review-stars">★★★★★</div>
+			</div>
+
+			<!-- Review 2 -->
+			<div class="review-card">
+				<p>"SVTT team helped with darshan booking and airport pickup. Tirupati trip was stress-free!"</p>
+				<div class="review-name">Anjali Sharma</div>
+				<div class="review-location">Delhi, India</div>
+				<div class="review-stars">★★★★☆</div>
+			</div>
+
+			<!-- Review 3 -->
+			<div class="review-card">
+				<p>"Our 1-day visit to Padmavathi, Govindaraja, and Kalahasti was spiritual and relaxing. Neat and
+					timely cab service."</p>
+				<div class="review-name">Karthik Subramanian</div>
+				<div class="review-location">Chennai, Tamil Nadu</div>
+				<div class="review-stars">★★★★☆</div>
+			</div>
+
+			<!-- Review 4 -->
+			<div class="review-card">
+				<p>"Even from Amritsar, we booked a 2-day South India pilgrimage. SVTT made it smooth and special!"</p>
+				<div class="review-name">Gurpreet Kaur</div>
+				<div class="review-location">Amritsar, Punjab</div>
+				<div class="review-stars">★★★☆☆</div>
+			</div>
+
+			<!-- Review 5 -->
+			<div class="review-card">
+				<p>"The group trip to Kanipakam and Golden Temple was well managed. Good guide and courteous driver."
+				</p>
+				<div class="review-name">Rohit Das</div>
+				<div class="review-location">Bhubaneswar, Odisha</div>
+				<div class="review-stars">★★★★☆</div>
+			</div>
+
+		</div>
+	</section>
+
 
 	<footer>
 		<style>
