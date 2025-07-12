@@ -1130,3 +1130,180 @@ caption {
 #vehicles > div > div.row > div:nth-child(3) > div > div > img{
 	height: 206.66px
 }
+
+.review-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.review-section h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (min-width: 640px) {
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .review-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.review-card {
+  background-color: #f3f4f6;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.review-card p {
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.review-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0059b3;
+}
+
+.review-location {
+  font-size: 14px;
+  color: #777;
+}
+
+.review-stars {
+  color: #facc15;
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.vehicle-details {
+  background-color: #f9fafb;
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.vehicle-details h3 {
+  font-size: 28px;
+  color: #1f2937;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.vehicle-details h4 {
+  font-size: 14px;
+  color: #ef4444;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.vehicle-details table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vehicle-details caption {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 10px;
+  caption-side: top;
+  text-align: left;
+  padding: 10px;
+}
+
+.vehicle-details th,
+.vehicle-details td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.vehicle-details th {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.vehicle-details tr:nth-child(even) td {
+  background-color: #f9fafb;
+}
+
+.vehicle-details td {
+  color: #374151;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .vehicle-details table,
+  .vehicle-details thead,
+  .vehicle-details tbody,
+  .vehicle-details th,
+  .vehicle-details td,
+  .vehicle-details tr {
+    display: block;
+  }
+
+  .vehicle-details tr {
+    margin-bottom: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  .vehicle-details td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .vehicle-details td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #6b7280;
+  }
+
+  .vehicle-details thead {
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+.abt-highlighter ,
+.contact-form,
+.media-contacts{
+  width: 400px;
+}
+}
