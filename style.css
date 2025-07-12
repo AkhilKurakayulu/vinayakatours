@@ -1127,8 +1127,8 @@ caption {
   left: -45px !important;
 }
 
-#vehicles > div > div.row > div:nth-child(3) > div > div > img{
-	height: 206.66px
+#vehicles>div>div.row>div:nth-child(3)>div>div>img {
+  height: 206.66px
 }
 
 .review-section {
@@ -1202,7 +1202,7 @@ caption {
   max-width: 1000px;
   margin: 0 auto;
   font-family: 'Segoe UI', sans-serif;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .vehicle-details h3 {
@@ -1262,6 +1262,7 @@ caption {
 }
 
 @media (max-width: 768px) {
+
   .vehicle-details table,
   .vehicle-details thead,
   .vehicle-details tbody,
@@ -1300,10 +1301,11 @@ caption {
   }
 }
 
-@media (max-width: 768px){
-.abt-highlighter ,
-.contact-form,
-.media-contacts{
-  width: 400px;
-}
+@media (max-width: 768px) {
+
+  .abt-highlighter,
+  .contact-form,
+  .media-contacts {
+    width: 400px;
+  }
 }
